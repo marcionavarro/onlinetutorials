@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="banner">
+            <img src="images/banner.jpg" alt="" class="cover">
+        </div>
+
+        <div class="navLink">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+            <a href="#" class="btn">Click Me</a>
+        </header>
+
+        <div class="imgBx"><img src="images/girl.jpg" alt="" class="cover"></div>
+        
+        <div class="content">
+            <h2>hi, I am<br><span>Marcio Navarro</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi repellendus ab, harum, a odit
+                corporis porro totam obcaecati asperiores fuga fugiat veritatis provident et quod qui mollitia unde! Id.
+            </p>
+            <a href="curriculo-online/index.html" target="_blank" class="btn">Acesse Meu CV</a>
+        </div>
+
+        <footer>
+            <ul class="sci">
+                <li><a href="#"><img src="images/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="images/instagram.png" alt=""></a></li>
+            </ul>
+            <p class="copyrightText">&copy;2021 Marcio Navarro </p>
+        </footer>
+    </section>
+	
+	 
+
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+        menuToggle.onclick = function () {
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

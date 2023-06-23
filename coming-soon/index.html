@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página responsiva em breve</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <a href="" class="logo">
+        <img src="assets/logo.png" width="250">
+        <p style="font-size: 0.95em; text-align: center; margin-top:-40px;">marcio navarro</p>
+    </a>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <img src="assets/curve.png" alt="" class="wave">
+    <div class="contentBx">
+        <h2>Em breve</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto cum eligendi illo ipsa quae? Commodi
+            consequuntur dolorum eos excepturi harum omnis quaerat ratione sit suscipit ut. Ducimus in rem velit.</p>
+        <div class="countdown">
+            <div class="time">
+                <div id="day"></div>
+                <span>Dias</span>
+            </div>
+            <div class="time">
+                <div id="hour"></div>
+                <span>Horas</span>
+            </div>
+            <div class="time">
+                <div id="minute"></div>
+                <span>Minutos</span>
+            </div>
+            <div class="time">
+                <div id="second"></div>
+                <span>Segundos</span>
+            </div>
+        </div>
+        <a href="#" onclick="toggle()">Me avise!</a>
+    </div>
+    <div class="imgBx"><img src="assets/man.png" alt=""></div>
+    <ul class="sci">
+        <li><a href="#"><img src="assets/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="assets/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="assets/instagram.png" alt=""></a></li>
+    </ul>
+</section>
+
+<div class="newsletter">
+    <h2>Stay Tuned</h2>
+    <p>Get notified at launch</p>
+    <div class="inputBox">
+        <form action="">
+            <input type="email" name="" placeholder="Enter Email Address" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <img src="assets/close.png" alt="" class="close" onclick="toggle()">
+</div>
+
+<script type="text/javascript">
+
+    function toggle() {
+        const newsletter = document.querySelector('.newsletter');
+        newsletter.classList.toggle('active');
+    }
+
+	const countDate = new Date('Tue Jan 31 2024 10:00:00 GMT-0300 (GMT-03:00)').getTime();
+	
+    function newYear() {	
+        const now = new Date().getTime();
+        const gap = countDate - now;
+
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+
+        const d = Math.floor(gap / (day));
+        const h = Math.floor((gap % (day)) / (hour));
+        const m = Math.floor((gap % (hour)) / (minute));
+        const s = Math.floor((gap % (minute)) / second);
+
+        document.getElementById('day').innerText = d;
+        document.getElementById('hour').innerText = h;
+        document.getElementById('minute').innerText = m;
+        document.getElementById('second').innerText = s;
+    }
+
+    setInterval(function () {
+        newYear();
+    }, 1000);
+
+</script>
+</body>
+</html>

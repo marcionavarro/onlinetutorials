@@ -1,0 +1,111 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+    outline: none;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: 'Popins', sans-serif;
+}
+
+input {
+    line-height: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 15px 30px;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+table th {
+    color: #364d67;
+    font-weight: 600;
+    background: #f1f7fd;
+}
+
+table td {
+    background-color: white;
+}
+
+table tbody tr {
+    border-top: 1px solid #f0f4f8;   
+}
+
+table .user {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+}
+
+table .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.stick-table {
+    overflow: auto;
+    border: 1px solid #f0f4f8;
+}
+
+/* .stick-table {
+    position: relative;
+}
+
+.stick-table:before{
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+} */
+
+.stick-table thead th:first-child,
+.stick-table tbody td:first-child
+{
+    position: sticky;
+    left: 0;
+}
+
+.stick-table tbody td:first-child span{
+    padding-right: 50px;
+}

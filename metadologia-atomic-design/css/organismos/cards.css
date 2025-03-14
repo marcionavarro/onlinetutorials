@@ -1,0 +1,13 @@
+@import url(styles.css);
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:  2px solid var(--teal);
+    padding: 2rem 4rem;
+}
+
+.cards>*{
+    margin: 1rem;
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #16384c;
-    overflow: hidden;
+    height: 100vh;
 }
 
 .container {
@@ -31,6 +33,7 @@ body {
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
+    border-radius: 4px;
     box-shadow: 0 5px 202px rgba(0,0,0,0.5);
     transition: 0.3s ease-in-out;
 }
@@ -69,5 +72,5 @@ body {
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
-    transition-delay: 0.3x;
+    transition-delay: 0.3s;
 }

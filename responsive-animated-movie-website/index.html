@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+
+    <header class="header_movie">
+        <a href="" class="logo">Movies <span>World</span></a>
+
+        <ul class="nav">
+            <li><a href=""><i class='bx bx-home'></i></a></li>
+            <li><a href="">Animation</a></li>
+            <li><a href="">Hollywood</a></li>
+            <li><a href="">Bollywood</a></li>
+            <li><a href="">My List</a></li>
+        </ul>
+
+        <div class="search">
+            <input type="text" placeholder="Search" class="input_movie">
+            <i class='bx bx-search-alt-2'></i>
+        </div>
+
+    </header>
+
+    <div class="banner">
+        <div class="content_box">
+            <div class="content active madagascar">
+                <h1 class="movie_title">Madagascar 2</h1>
+                <h4>
+                    <span class="release">2008</span>
+                    <span>1h 35min</span>
+                    <span>Aventura, Animação, Família</span>
+                </h4>
+                <p>
+                    Em Madagascar 2, Alex (Ben Stiller), Marty (Chris Rock), Melman (David Schwimmer), Gloria (Jada
+                    Pinkett Smith), o rei Julien (Sacha Baron Cohen), Maurice (Cedric the Entertainer), os pinguins e os
+                    chimpanzés ainda estão no remoto litoral de Madagascar. Para tentar voltar para casa, os pinguins
+                    consertam um velho avião de guerra
+                </p>
+                <div class="button">
+                    <a href="#"><i class='bx bx-play'></i> Watch</a>
+                    <a href="#"><i class='bx bx-plus'></i> My List</a>
+                </div>
+
+            </div>
+
+            <div class="content kungFuPanda">
+                <h1 class="movie_title">Kung Fu Panda</h1>
+                <h4>
+                    <span class="release">2008</span>
+                    <span>1h 30min</span>
+                    <span> Ação, Animação, Família, Artes Marciais</span>
+                </h4>
+                <p>
+                    Po (Jack Black) é um urso panda desajeitado, que trabalha no restaurante de macarrão de sua família.
+                    Um dia ele é surpreendido ao saber que foi escolhido para cumprir uma antiga profecia, o que faz com
+                    que treine ao lado de seus ídolos no kung fu
+                </p>
+                <div class="button">
+                    <a href="#"><i class='bx bx-play'></i> Watch</a>
+                    <a href="#"><i class='bx bx-plus'></i> My List</a>
+                </div>
+
+            </div>
+
+            <div class="content giJoe">
+                <h1 class="movie_title">G.I. Joe</h1>
+                <h4>
+                    <span class="release">2009</span>
+                    <span>1h 18min</span>
+                    <span>Ação, Aventura, Ficção Científica</span>
+                </h4>
+                <p>
+                    James McCullen (Christopher Eccleston) é o maior comerciante de armas do planeta. Ele está prestes a
+                    lançar sua nova arma, os nanomites, microscópicos robôs que podem destruir tudo o que encontram pela
+                    frente, independente do material que seja feito, e que podem ser desligados no momento que for
+                    desejado. McCullen envia quatro ogivas de ...
+                </p>
+                <div class="button">
+                    <a href="#"><i class='bx bx-play'></i> Watch</a>
+                    <a href="#"><i class='bx bx-plus'></i> My List</a>
+                </div>
+
+            </div>
+
+            <div class="content harryPoter">
+                <h1 class="movie_title">Harry Potter</h1>
+                <h4>
+                    <span class="release">2008</span>
+                    <span>1h 29min</span>
+                    <span>Animation</span>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut ad eius, officiis quam sed.
+                    Laboriosam vero repellendus suscipit, fugiat dolores alias officiis dolor, ipsa est, sed sequi quos
+                    atque.
+                </p>
+                <div class="button">
+                    <a href="#"><i class='bx bx-play'></i> Watch</a>
+                    <a href="#"><i class='bx bx-plus'></i> My List</a>
+                </div>
+
+            </div>
+
+            <div class="content JohnWick">
+                <h1 class="movie_title">Madagascar 2</h1>
+                <h4>
+                    <span class="release">2008</span>
+                    <span>1h 29min</span>
+                    <span>Animation</span>
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut ad eius, officiis quam sed.
+                    Laboriosam vero repellendus suscipit, fugiat dolores alias officiis dolor, ipsa est, sed sequi quos
+                    atque.
+                </p>
+                <div class="button">
+                    <a href="#"><i class='bx bx-play'></i> Watch</a>
+                    <a href="#"><i class='bx bx-plus'></i> My List</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"
+                onclick="changeBgImg('madagascar-escape-2-landscape.jpg', 'madagascar')"><img
+                    src="./images/madagascar-escape-2-portrait.jpg"></a>
+            <a class="carousel-item" href="#two!"
+                onclick="changeBgImg('kung-fu-panda-landscape.jpg', 'kungFuPanda')"><img
+                    src="./images/kung-fu-panda-portrait.jpg"></a>
+            <a class="carousel-item" href="#three!" onclick="changeBgImg('gi-joe-landscape.jpg', 'giJoe')"><img
+                    src="./images/gi-joe-portrait.jpg"></a>
+            <a class="carousel-item" href="#three!"
+                onclick="changeBgImg('Harry-Potter-landscape.jpg', 'harryPoter')"><img
+                    src="./images/harry-poter-portrait_.jpg"></a>
+            <a class="carousel-item" href="#three!" onclick="changeBgImg('john-wick-landscape.jpg', 'JohnWick')"><img
+                    src="./images/john-wick-portrait.jpg"></a>
+        </div>
+
+        <footer class="footer">
+            <a class="play" onclick="toggleVideo()"><i class='bx  bx-play-circle'></i> Whatch Trailer</a>
+            <ul class="social">
+                <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                <li><a href=""><i class='bx bxl-youtube'></i></a></li>
+                <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+            </ul>
+        </footer>
+
+        <div class="trailer">
+            <video src="./trailer/John Wick - Um Novo Dia Para Matar ｜ Trailer Legendado.mp4" muted controls="true"
+                autoplay="true">
+            </video>
+            <p class="close" onclick="toggleVideo()">X</p>
+        </div>
+    </div>
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
